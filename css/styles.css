@@ -1,3 +1,10 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
     --Blue: #2196F3;
     --black: #212121;
@@ -27,15 +34,17 @@ ul{
     list-style: none;  
 }
 .conteiner{
-    width: 1200;
+    width: 1200px;
     padding: 0px 15px;
-    
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px red solid;
 }
 
 /* HEADER */
 .header {
-   
-    
+   padding: 25px 0px;
+    margin-bottom: 24px;
 }
 
 .logo {
@@ -91,6 +100,9 @@ letter-spacing: 0.02em;
 
 .hero{
   background-color: var(--background-gray); 
+  margin-bottom: 65px;
+  padding: 195px 0px 205px 0px;
+  text-align: center;
 }
 .hero-title {
     font-weight: 900;
@@ -111,14 +123,18 @@ background-color: var(--Blue);
 font-family: inherit;
 border-color: var(--Blue);
 cursor: pointer;
+display: inline-block;
+
 }
 .hero-button:hover, .hero-button:focus {
     background-color: var(--button-active);
 }
 /* ADVANTTAGE */
 .advantage {
+    margin-bottom: 94px;
 }
 .advantage-title {
+    display: none;
 }
 
 .advantage-suptitle {
@@ -128,6 +144,7 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--black);
+margin-bottom: 10px;
 }
 .advantage-text {
     font-weight: 400;
@@ -138,6 +155,7 @@ color: var(--gray);
 }
 /* EXAMPLE */
 .examples {
+    margin-bottom: 94px;
 }
 .title {
     font-weight: 700;
@@ -146,6 +164,7 @@ color: var(--gray);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--black);
+    margin-bottom: 50px;
 }
 
 .examples-items {
@@ -159,7 +178,23 @@ color: var(--gray);
 /* TEAM */
 .tiam {
     background-color: var(--background-button);
+    padding: 94px 0px;
+    margin-bottom: 94px;
 }
+/* !!!!!!!!!!!!!! не знаю чи так можна.Але зробити одним не вийшло!!!!!!!!!!!!!!!!!!!!!!!!!1 */
+/* .tiam-item:nth-child(3) {
+    margin: 0px 30px;
+}
+.tiam-item:nth-child(2) {
+    margin: 0px 30px; } */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.tiam-item{
+    padding-bottom: 30;
+    
+}
+
+
 
 .tiam-name {
     font-weight: 500;
@@ -167,6 +202,7 @@ font-size: 16px;
 line-height: 1.18;
 letter-spacing: 0.03em;
 color: var(--black);
+ma
 }
 .tiam-position {
     font-weight: 400;
@@ -178,6 +214,7 @@ color: var(--gray);
 /* FOOTER */
 .footer {
     background-color:var(--background-gray);
+    padding: 50px 0px;
 }
 .footer-logo {
     font-family: 'Raleway';
@@ -209,6 +246,12 @@ font-style: normal;
     color: var(--Blue);
 } 
 /*---------------------------Portfilio-----------------------------------*/
+.portfolio{
+    margin-bottom: 68px;
+}
+.filters-list{
+    margin-bottom: 50px;
+}
 .filters-button{
     font-weight: 500;
 font-size: 16px;
@@ -231,6 +274,8 @@ font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 color: var(--black);
+margin-top: 20px;
+margin-bottom: 4px;
 }
 .portfolio-suptitle {
     font-weight: 400;
