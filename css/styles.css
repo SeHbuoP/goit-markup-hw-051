@@ -22,8 +22,16 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  margin-bottom: 0;
-    margin-top: 0;
+  margin: 0;
+  
+  
+}
+ul{
+    
+    padding: 0;
+}
+img{
+    display: block;
 }
 
 body{
@@ -46,8 +54,14 @@ ul{
    padding: 25px 0px;
     margin-bottom: 24px;
 }
+.header .conteiner{
+    display: flex;
+    align-items: center;
+}
 
 .logo {
+margin-right: 93px;
+
     font-family: 'Raleway';
 font-style: normal;
 font-weight: 700;
@@ -58,11 +72,20 @@ color: var(--Blue);
 text-decoration: none;
  
 }
+.navigation{
+    margin-right: auto;
+}
+.nav-list{
+    display: flex;
+    gap: 50px;
+}
+
 .logo-studio {
     color: var(--black-logo);
 }
 .nav-list .nav-link.current {
 color: var(--Blue);
+
 }
 
 
@@ -72,8 +95,11 @@ font-size: 14px;
 line-height: 1.1428;
 letter-spacing: 0.02em;
 }
+
+
 .nav-link{
     color: var(--black);
+    
 }
 .link {
     text-decoration: none;
@@ -81,14 +107,22 @@ letter-spacing: 0.02em;
 .link:hover, .link:focus{
     color: var(--Blue);
 }
-.contacts {
+.contacts{
+   display: flex;
+   margin-right: 0px;
 }
 .contacts-item {
+    margin-right: 50px;
     font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
+margin-right: 50px;
 }
+.contacts .contacts-item:nth-last-child(1){
+    margin-right: 0px;
+}
+
 .contacts-link:hover, .contacts-link:focus {
     color: var(--Blue);
 }
@@ -98,11 +132,14 @@ letter-spacing: 0.02em;
 }
 /* HERO */
 
-.hero{
+.hero .conteiner{
   background-color: var(--background-gray); 
   margin-bottom: 65px;
   padding: 195px 0px 205px 0px;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  
 }
 .hero-title {
     font-weight: 900;
@@ -112,6 +149,11 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--white);
+width: 696px;
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 30px;
+
 }
 .hero-button {
     font-weight: 700;
@@ -130,12 +172,23 @@ display: inline-block;
     background-color: var(--button-active);
 }
 /* ADVANTTAGE */
+
+.advantage .conteiner{
+    
+}
 .advantage {
     margin-bottom: 94px;
 }
 .advantage-title {
     display: none;
 }
+.advantage-list{
+    display: flex;
+    gap: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    
+} 
 
 .advantage-suptitle {
     font-weight: 700;
@@ -166,8 +219,16 @@ color: var(--gray);
     color: var(--black);
     margin-bottom: 50px;
 }
+.examples-list{
+    display: flex;
+    gap: 30px;
+    width: calc((100% - 90Px) / 3);
+    margin: 0;
+    padding: 0;
+}
 
 .examples-items {
+    
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -178,17 +239,23 @@ color: var(--gray);
 /* TEAM */
 .tiam {
     background-color: var(--background-button);
-    padding: 94px 0px;
+    padding-top: 102px;
+    padding-bottom: 86px;
     margin-bottom: 94px;
-}
-/* !!!!!!!!!!!!!! не знаю чи так можна.Але зробити одним не вийшло!!!!!!!!!!!!!!!!!!!!!!!!!1 */
-/* .tiam-item:nth-child(3) {
-    margin: 0px 30px;
-}
-.tiam-item:nth-child(2) {
-    margin: 0px 30px; } */
+    
+    
+    
 
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+}
+
+
+.tiam-list{
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    width: calc((100% - 90px)/ 4);
+}
+
 .tiam-item{
     padding-bottom: 30;
     
@@ -202,7 +269,10 @@ font-size: 16px;
 line-height: 1.18;
 letter-spacing: 0.03em;
 color: var(--black);
-ma
+margin-top: 30px;
+margin-bottom: 10px;
+text-align: center;
+
 }
 .tiam-position {
     font-weight: 400;
@@ -210,11 +280,15 @@ font-size: 16px;
 line-height: 1.18;
 letter-spacing: 0.03em;
 color: var(--gray);
+text-align: center;
 }
 /* FOOTER */
 .footer {
     background-color:var(--background-gray);
-    padding: 50px 0px;
+    padding: 58px 0px 62px 0px;
+}
+.footer-conteiner{
+   
 }
 .footer-logo {
     font-family: 'Raleway';
@@ -224,6 +298,13 @@ line-height: 1.19;
 letter-spacing: 0.03em;
 color: var(--Blue);
 text-decoration: none;
+margin-bottom: 20px;
+display: inline-block;
+
+}
+
+ .footer-list{
+    gap: 50px;
 }
 .footer-studio {
     color: var(--white);
@@ -237,7 +318,14 @@ letter-spacing: 0.03em;
 color: var(--rgba-gray);
 text-decoration: none;
 font-style: normal;
+
 }
+.address-item{
+    margin-bottom: 9px;
+    
+}
+
+
 .address {
     color: var(--white);
     
@@ -249,8 +337,14 @@ font-style: normal;
 .portfolio{
     margin-bottom: 68px;
 }
+.portfolio-first-title{
+    display: none;
+}
 .filters-list{
     margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
 }
 .filters-button{
     font-weight: 500;
@@ -261,11 +355,22 @@ color: var(--black);
 background-color: var(--background-button);
 border-color: var(--background-button);
 font-family: inherit;
+border-radius: 5px;
 }
 .filters-button:hover, .filters-button:focus {
 color: var(--white);
 background-color: var(--Blue);
 cursor: pointer;
+}
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+}
+.portfolio-item{
+    
+width: calc((100% - 60px)/ 3);
 }
 
 
@@ -276,6 +381,7 @@ letter-spacing: 0.06em;
 color: var(--black);
 margin-top: 20px;
 margin-bottom: 4px;
+
 }
 .portfolio-suptitle {
     font-weight: 400;
@@ -290,4 +396,5 @@ color: var(--gray);
     line-height: 1.56;
     letter-spacing: 0.03em;
     color: var(--white);
+    color: red;
 }
