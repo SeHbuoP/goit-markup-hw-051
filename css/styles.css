@@ -46,13 +46,17 @@ ul{
     padding: 0px 15px;
     margin-left: auto;
     margin-right: auto;
-    border: 2px red solid;
+    
+}
+.section{
+    padding-bottom: 94px;
+    padding-top: 94px;
 }
 
 /* HEADER */
 .header {
    padding: 25px 0px;
-    margin-bottom: 24px;
+   border: 1px solid #ECECEC;
 }
 .header .conteiner{
     display: flex;
@@ -132,10 +136,8 @@ margin-right: 50px;
 }
 /* HERO */
 
-.hero .conteiner{
+.hero{
   background-color: var(--background-gray); 
-  margin-bottom: 65px;
-  padding: 195px 0px 205px 0px;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -180,7 +182,7 @@ border-radius: 4px;
     
 }
 .advantage {
-    margin-bottom: 94px;
+    
 }
 .advantage-title {
     display: none;
@@ -211,7 +213,7 @@ color: var(--gray);
 }
 /* EXAMPLE */
 .examples {
-    margin-bottom: 67px;
+    
 }
 .title {
     font-weight: 700;
@@ -242,9 +244,6 @@ color: var(--gray);
 /* TEAM */
 .tiam {
     background-color: var(--background-button);
-    padding-top: 94px;
-    padding-bottom: 94px;
-    margin-bottom: 27px;
 }
 
 .tiam-list{
@@ -335,7 +334,13 @@ font-style: normal;
 } 
 /*---------------------------Portfilio-----------------------------------*/
 .portfolio{
-    margin-bottom: 68px;
+    
+}
+.portfolio-box{
+    padding: 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
 }
 .portfolio-first-title{
     display: none;
