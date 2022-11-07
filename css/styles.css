@@ -52,10 +52,21 @@ ul{
     padding-bottom: 94px;
     padding-top: 94px;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
 /* HEADER */
 .header {
-   padding: 25px 0px;
    border: 1px solid #ECECEC;
 }
 .header .conteiner{
@@ -65,7 +76,8 @@ ul{
 
 .logo {
 margin-right: 93px;
-
+padding-bottom: 25px;
+padding-top: 25px;
     font-family: 'Raleway';
 font-style: normal;
 font-weight: 700;
@@ -78,10 +90,12 @@ text-decoration: none;
 }
 .navigation{
     margin-right: auto;
+    
 }
 .nav-list{
     display: flex;
     gap: 50px;
+    
 }
 
 .logo-studio {
@@ -98,12 +112,14 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.1428;
 letter-spacing: 0.02em;
+
 }
 
 
 .nav-link{
     color: var(--black);
-    
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .link {
     text-decoration: none;
@@ -132,6 +148,8 @@ margin-right: 50px;
 }
 .contacts-link { 
     color: var(--gray);
+    padding-top: 32px;
+    padding-bottom: 32px;
 
 }
 /* HERO */
@@ -183,9 +201,6 @@ border-radius: 4px;
 }
 .advantage {
     
-}
-.advantage-title {
-    display: none;
 }
 .advantage-list{
     display: flex;
@@ -342,9 +357,18 @@ font-style: normal;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
 }
-.portfolio-first-title{
-    display: none;
-}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 .filters-list{
     margin-bottom: 50px;
     display: flex;
