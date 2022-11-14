@@ -125,7 +125,7 @@ letter-spacing: 0.02em;
 .link {
     text-decoration: none;
 }  
-.link:hover, .link:focus{
+.link:hover,.link:focus{
     color: var(--Blue);
 }
 .contacts{
@@ -156,7 +156,13 @@ align-items: center;
 .contacts-link:hover .mail {
     fill: var(--Blue);
 }
+.contacts-link:focus .mail{
+    fill: var(--Blue);
+}
 .contacts-link:hover .phone {
+    fill: var(--Blue);
+}
+.contacts-link:focus .phone{
     fill: var(--Blue);
 }
 .contacts .contacts-item:nth-last-child(1){
@@ -402,7 +408,11 @@ fill: var(--background-white);
    border-radius: 4px;
   
 }
-.client-link:hover, :focus {
+.client-link:hover {
+    border: 1px solid var(--Blue);
+    fill: var(--Blue);
+}
+.client-link:focus {
     border: 1px solid var(--Blue);
     fill: var(--Blue);
 }
@@ -466,7 +476,7 @@ font-style: normal;
     color: var(--white);
     
 }
-.footer-address:hover, .footer-address:focus{
+.footer-address:hover,.footer-address:focus{
     color: var(--Blue);
 } 
 .footer-conteiner{
@@ -598,7 +608,7 @@ color: var(--gray);
     color: var(--white);
     color: red;
 }
-.shadov-portfolio:hover, :focus{
+.shadov-portfolio:hover,.shadov-portfolio:focus{
     display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
     0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
