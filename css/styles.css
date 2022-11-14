@@ -412,7 +412,7 @@ fill: var(--background-white);
   
 }
 .client-link:hover {
-    border: var(--Blue);
+    border: 1px solid var(--Blue);
     color: var(--Blue);  
 }
 .client-link:focus{
