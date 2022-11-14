@@ -411,9 +411,14 @@ fill: var(--background-white);
    color: #AFB1B8;
   
 }
-.client-link:hover, .client-link:focus {
-    outline:  1px solid var(--Blue);
+.client-link:hover {
+    border: var(--Blue);
     color: var(--Blue);  
+}
+.client-link:focus{
+    outline:  1px solid var(--Blue);
+    color: var(--Blue);
+    border: none;
 }
 
 .client-icon{
