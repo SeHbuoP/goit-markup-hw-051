@@ -519,6 +519,8 @@ margin-bottom: 20px;
 }
 .footer-link:focus{
     background-color: var(--Blue);
+  border: none;
+  outline: none;
 }
 .footer-icon {
     fill: var(--background-white);
