@@ -408,18 +408,18 @@ fill: var(--background-white);
     height: 92px;
     border: 1px solid #AFB1B8;
    border-radius: 4px;
+   color: #AFB1B8;
   
 }
 .client-link:hover, .client-link:focus {
     outline:  1px solid var(--Blue);
-    fill: currentColor;
-   
+    color: var(--Blue);  
 }
-
 
 .client-icon{
-    fill:  #AFB1B8;
+    fill:  currentColor;
 }
+
 .client-link:hover .client-icon {
     fill: var(--Blue);
 }
