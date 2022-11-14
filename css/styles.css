@@ -125,7 +125,7 @@ letter-spacing: 0.02em;
 .link {
     text-decoration: none;
 }  
-.link:hover,.link:focus{
+.link:hover, .link:focus{
     color: var(--Blue);
 }
 .contacts{
@@ -379,7 +379,7 @@ text-align: center;
     
 
 }
-.tiam-link:hover, :focus{
+.tiam-link:hover, .tiam-link:focus{
     background-color: var(--Blue);
 }
 .tiam-link:hover  .tiam-icon{
@@ -408,14 +408,11 @@ fill: var(--background-white);
    border-radius: 4px;
   
 }
-.client-link:hover {
+.client-link:hover, .client-link:focus {
     border: 1px solid var(--Blue);
     fill: var(--Blue);
 }
-.client-link:focus {
-    border: 1px solid var(--Blue);
-    fill: var(--Blue);
-}
+
 .client-icon{
     fill:  #AFB1B8;
 }
@@ -476,7 +473,7 @@ font-style: normal;
     color: var(--white);
     
 }
-.footer-address:hover,.footer-address:focus{
+.footer-address:hover, .footer-address:focus{
     color: var(--Blue);
 } 
 .footer-conteiner{
@@ -608,7 +605,7 @@ color: var(--gray);
     color: var(--white);
     color: red;
 }
-.shadov-portfolio:hover,.shadov-portfolio:focus{
+.shadov-portfolio:hover, .shadov-portfolio:focus{
     display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
     0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
