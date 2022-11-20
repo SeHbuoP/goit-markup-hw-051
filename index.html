@@ -63,7 +63,9 @@
       <section class="hero">
         <div class="conteiner">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-button">Замовити послугу</button>
+          <button type="button" class="hero-button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <section class="advantage section">
@@ -108,13 +110,34 @@
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="examples-list list">
             <li class="examples-items">
-              <img width="370" src="./images/img1.jpg" alt="Приклад роботи 1" />
+              <div class="img-tumb">
+                <img
+                  width="370"
+                  src="./images/img1.jpg"
+                  alt="Приклад роботи 1"
+                />
+                <p class="examples-text">Десктопні додатки</p>
+              </div>
             </li>
             <li class="examples-items">
-              <img width="370" src="./images/img2.jpg" alt="Приклад роботи 2" />
+              <div class="img-tumb">
+                <img
+                  width="370"
+                  src="./images/img2.jpg"
+                  alt="Приклад роботи 2"
+                />
+                <p class="examples-text">Мобільні додатки</p>
+              </div>
             </li>
             <li class="examples-items">
-              <img width="370" src="./images/img3.jpg" alt="Приклад роботи 3" />
+              <div class="img-tumb">
+                <img
+                  width="370"
+                  src="./images/img3.jpg"
+                  alt="Приклад роботи 3"
+                />
+                <p class="examples-text">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -382,5 +405,16 @@
         </div>
       </div>
     </footer>
+
+    <div class="bagdrop" data-modal>
+      <div class="modal">
+        <button type="button" class="model-button" data-modal-close>
+          <svg class="icon-model" width="11px" height="11px">
+            <use href="./images/icon.svg#icon-Vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
