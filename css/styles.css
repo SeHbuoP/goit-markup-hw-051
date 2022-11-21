@@ -118,7 +118,7 @@ color: var(--Blue);
     background-color: var(--Blue);
     position: absolute;
     bottom: 0;
-
+    transform: scaleX(1.1);
 }
 
 
@@ -139,11 +139,10 @@ letter-spacing: 0.02em;
 }
 .link {
     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }  
 .link:hover, .link:focus{
     color: var(--Blue);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts{
    display: flex;
@@ -166,29 +165,21 @@ align-items: center;
     fill: var(--gray);
     cursor: pointer;
     margin-right: 10px;
-    
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 
 
 .contacts-link:hover .mail {
     fill: var(--Blue);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link:focus .mail{
     fill: var(--Blue);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link:hover .phone {
     fill: var(--Blue);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link:focus .phone{
     fill: var(--Blue);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts .contacts-item:nth-last-child(1){
     margin-right: 0px;
@@ -196,8 +187,6 @@ align-items: center;
 
 .contacts-link:hover, .contacts-link:focus {
     color: var(--Blue);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link { 
     color: var(--gray);
@@ -205,6 +194,7 @@ align-items: center;
     padding-bottom: 32px;
     display: flex;
     align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 /* HERO */
@@ -256,12 +246,13 @@ display: inline-block;
 min-width: 216px;
 height: 50px;
 border-radius: 4px;
+transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .hero-button:hover, .hero-button:focus {
-    background-color: var(--button-active);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background-color:var(--button-active);
+    border-color: var(--button-active);
 }
 /* ADVANTTAGE */
 
@@ -424,23 +415,19 @@ text-align: center;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    
-
+    transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .tiam-link:hover, .tiam-link:focus{
     background-color: var(--Blue);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .tiam-link:hover  .tiam-icon{
 fill: var(--background-white);
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .tiam-link:focus .tiam-icon{
     fill: var(--background-white);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .tiam-icon {
     fill: #AFB1B8;
@@ -459,30 +446,27 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid #AFB1B8;
    border-radius: 4px;
    color: #AFB1B8;
-  
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 2500ms cubic-bezier(0.4, 0, 0.2, 1), outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-link:hover {
     border: 1px solid var(--Blue);
     color: var(--Blue);  
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .client-link:focus{
     outline:  1px solid var(--Blue);
     color: var(--Blue);
     border: none;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+}  
 
 .client-icon{
     fill:  currentColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link:hover .client-icon {
     fill: var(--Blue);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients{
@@ -527,7 +511,7 @@ letter-spacing: 0.03em;
 color: var(--rgba-gray);
 text-decoration: none;
 font-style: normal;
-
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-item{
     margin-bottom: 9px;
@@ -541,8 +525,7 @@ font-style: normal;
 }
 .footer-address:hover, .footer-address:focus{
     color: var(--Blue);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 } 
 .footer-conteiner{
     display: flex;
@@ -578,18 +561,16 @@ margin-bottom: 20px;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-link:hover {
     background-color: var(--Blue);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 .footer-link:focus{
     background-color: var(--Blue);
   border: none;
   outline: none;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon {
     fill: var(--background-white);
@@ -635,6 +616,9 @@ border-radius: 5px;
 min-width: 73px;
 padding: 6px 22px;
 border: none;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+ background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+ box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filters-button:hover, .filters-button:focus {
 color: var(--white);
@@ -642,8 +626,7 @@ background-color: var(--Blue);
 cursor: pointer;
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px
  rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
- transition-duration: 250ms;
- transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .portfolio-list{
     display: flex;
@@ -654,12 +637,12 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px
 .portfolio-item{
     
 width: calc((100% - 60px)/ 3);
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .portfolio-item:focus{
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+     0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 
@@ -698,7 +681,7 @@ color: var(--gray);
     width: 100%;
     height: 100%;
     background: rgba(33, 150, 243, 0.9);
-    transition: transform  250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform  250ms cubic-bezier(0.4, 0, 0.2, 1),
     pointer-events: none;
 
 }
@@ -722,8 +705,7 @@ color: var(--gray);
     display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
     0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 
 /* MODAL */
